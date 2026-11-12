@@ -539,3 +539,22 @@ fun CifraAppScreen() {
         )
     }
 }
+
+// Utilitário para extrair arquivo do Uri para o cache interno do app
+fun copyUriToFile(context: Context, uri: Uri): File? {
+    return try {
+        val inputStream = context.contentResolver.openInputStream(uri) ?: return null
+        val tempFile = File(context.cacheDir, "upload_${System.currentTimeMillis()}.mp3")
+        val outputStream = FileOutputStream(tempFile)
+        inputStream.use { input ->
+            outputStream.use { output ->
+                input.copyTo(output)
+            }
+        }
+        tempFile
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
+    }
+}
+
