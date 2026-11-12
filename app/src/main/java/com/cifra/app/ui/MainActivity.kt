@@ -313,7 +313,16 @@ fun CifraAppScreen() {
 
             Text(text = statusMessage, color = Color.LightGray, fontSize = 12.sp)
 
-            Spacer(Modifier.height(10.dp))
+            // Assinatura e Créditos do Projeto
+            Text(
+                text = "Desenvolvido por Phill Carv • IA Parceira: Antigravity",
+                color = Color(0xFF8E9AAF),
+                fontSize = 11.sp,
+                fontWeight = FontWeight.Medium,
+                modifier = Modifier.padding(vertical = 2.dp)
+            )
+
+            Spacer(Modifier.height(8.dp))
 
             // Barra de Ferramentas do Show (Transposição e Auto-Scroll)
             cifraResult?.let { result ->

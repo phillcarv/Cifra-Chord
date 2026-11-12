@@ -5,6 +5,12 @@ O aplicativo ouve a música pelo microfone ou importa arquivos de áudio, conect
 
 ---
 
+## 👥 Equipe & Criação
+* **Desenvolvedor & Criador:** **Phill Carv**
+* **Co-Piloto & IA Parceira:** **Antigravity (Google DeepMind)**
+
+---
+
 ## 🚀 Recursos Principais
 - **Nome Comercial:** Cifra Chord
 - **Ouvir no Bar:** Gravação de áudio de alta fidelidade pelo microfone.
@@ -18,14 +24,9 @@ O aplicativo ouve a música pelo microfone ou importa arquivos de áudio, conect
 
 ## 📦 Como Compilar o APK no GitHub Actions
 
-1. Suba este diretório para o repositório `cifra-chord` no GitHub:
+1. Os arquivos já estão configurados e comitados. Para enviar as atualizações:
 ```powershell
 cd "C:\Users\Phill Carv\.gemini\antigravity\scratch\cifra-chord"
-git init
-git add .
-git commit -m "feat: initial commit - Cifra Chord Android app"
-git branch -M main
-git remote add origin https://github.com/phillcarv/cifra-chord.git
 git push -u origin main
 ```
-2. Acesse a aba **Actions** no seu GitHub. O workflow compilará o arquivo `Cifra-Chord-App-Debug.apk` automaticamente em nuvem!
+2. Acesse a aba **Actions** no seu GitHub (`https://github.com/phillcarv/Cifra-Acorde/actions`). O workflow compilará o arquivo **`Cifra-Chord-App-Debug.apk`** automaticamente em nuvem!
